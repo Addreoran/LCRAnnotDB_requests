@@ -1,0 +1,23 @@
+import requests
+
+data = {
+    "result_data": "proteins",
+    "columns": [
+        'Protein ID',
+        'UniProtACC',
+        'Organism',
+        'Protein name',
+        'Protein Sequence',
+        'Protein header',
+        'Protein source',
+        'Number of LCRs',
+        'Number of annotations'
+    ],
+    "search_by_column": {
+        "Source database": "PhaSepDB"
+    }
+}
+
+response = requests.post("https://lcrannotdb.lcr-lab.org/api/proteins/", json=data).text
+with open("proteins_phasepro.csv", "w") as f:
+    f.write(response)
