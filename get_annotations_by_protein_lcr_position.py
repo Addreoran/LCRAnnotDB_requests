@@ -1,3 +1,23 @@
+import requests
+import json
+
+
+columns = ["Start of LCR",
+           "End of LCR",
+           "Start of annotation",
+           "End of annotation",
+           "LCR ID",
+           'Annotation ID',
+           'UniProtACC',
+           'Annotation',
+           'Category',
+           'Source ID',
+           "Gene Ontology",
+           "Source database",
+           'Organism',
+           'Protein name',
+           ]
+
 def get_annotations_by_lcr_by_position(begin, end, protein_id):
     header = ""
     search_by_column = [
