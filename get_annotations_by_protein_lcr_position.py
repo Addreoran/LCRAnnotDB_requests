@@ -35,16 +35,13 @@ if __name__ == '__main__':
     end = 294
     protein_id = "Q6GZX3"
     sequence = "PPPPPPKPTPPTPPTPPTPPTPPTPPTPPTPR"
-    print(get_annotations_by_exact_lcr(begin, end, protein_id))
-    print("Poza LCRem")
     print(get_annotations_by_lcr_by_position(1, 2, protein_id))
-    print("Dokładnie taki sam LCR")
     print(get_annotations_by_lcr_by_position(begin, end, protein_id))
-    print("Nachodzące na siebie #1 ---s-l-----l-s")
+    print("#1 ---s-l-----l-s")
     print(get_annotations_by_lcr_by_position(begin - 1, end + 1, protein_id))
-    print("Nachodzące na siebie #2 ----l-s----l-s")
+    print("#2 ----l-s----l-s")
     print(get_annotations_by_lcr_by_position(begin + 1, end + 1, protein_id))
-    print("Nachodzące na siebie #3 ---s-l----s-l-")
+    print("#3 ---s-l----s-l-")
     print(get_annotations_by_lcr_by_position(begin - 1, end - 1, protein_id))
-    print("Nachodzące na siebie #4  ----l-s---s-l-")
+    print(#4  ----l-s---s-l-")
     print(get_annotations_by_lcr_by_position(begin + 1, end - 1, protein_id))
