@@ -63,5 +63,5 @@ if __name__ == '__main__':
     print(get_annotations_by_lcr_by_position(begin + 1, end + 1, protein_id))
     print("#3 ---s-l----s-l-")
     print(get_annotations_by_lcr_by_position(begin - 1, end - 1, protein_id))
-    print(#4  ----l-s---s-l-")
+    print("#4  ----l-s---s-l-")
     print(get_annotations_by_lcr_by_position(begin + 1, end - 1, protein_id))
